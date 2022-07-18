@@ -9,11 +9,13 @@ export const increment = () => {
     type: INCREMENT,
   };
 };
+
 export const decrement = () => {
   return {
     type: DECREMENT,
   };
 };
+
 export const reset = () => {
   return {
     type: RESET,
@@ -31,16 +33,19 @@ const counterReducer = (state = initialState, action) => {
         ...state,
         history: state.history.concat('+1'),
       };
+
     case DECREMENT:
       return {
         ...state,
         history: state.history.concat('-1'),
       };
+
     case RESET:
       return {
         ...state,
         history: [],
       };
+
     default:
       return state;
   }
