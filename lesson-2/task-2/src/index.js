@@ -23,7 +23,6 @@ decrementBtn.addEventListener('click', onDecrement);
 resetBtn.addEventListener('click', onReset);
 
 store.subscribe(() => {
-  console.log(store.getState());
   const state = store.getState();
   const currentValue = state.history.reduce((acc, value) => acc + Number(value), 0);
   const historyString = state.history.join('');
