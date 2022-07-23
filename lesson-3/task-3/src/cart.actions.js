@@ -1,3 +1,5 @@
+ lines (18 sloc)  353 Bytes
+
 export const ADD_PRODUCT = 'PRODUCT/ADD_PRODUCT';
 export const REMOVE_PRODUCT = 'PRODUCT/REMOVE_PRODUCT';
 
